@@ -13,13 +13,14 @@ $susy: (
 }
 
 article{
-	width: span(12 of 12);
+	@include span(10 of 12);
+	@include pre(1 of 12);
 }
 
 // landing slide inner layout
 // stuff within container are centered
 
-.slide--landing, .slide--introduction > div{
+.slide--landing > div, .slide--introduction > div{
 	display: flex;
 	justify-content: center;
 }
@@ -63,6 +64,18 @@ article{
 	}
 }
 
+// visual styling on landing page
+.slide--landing{
+	height: 100vh;
+	img{
+		padding: 5em;
+	}
+	.highlight{
+		font-style: italic;
+		background-color: yellow;
+		font-weight: bold;
+	}
+}
 // visual styling for widgets
 .widget{
 	margin: 0.5em;

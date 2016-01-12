@@ -2,9 +2,16 @@
   box-sizing: border-box; }
 
 article {
-  width: 100%; }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.3333333333%;
+  float: right;
+  padding-right: 0.8333333333%;
+  padding-left: 0.8333333333%;
+  margin-right: 8.3333333333%; }
 
-.slide--landing, .slide--introduction > div {
+.slide--landing > div, .slide--introduction > div {
   display: flex;
   justify-content: center; }
 
@@ -31,6 +38,15 @@ article {
 .slide--3-col-example .sidebar {
   width: 16.6666666667%;
   float: left; }
+
+.slide--landing {
+  height: 100vh; }
+  .slide--landing img {
+    padding: 5em; }
+  .slide--landing .highlight {
+    font-style: italic;
+    background-color: yellow;
+    font-weight: bold; }
 
 .widget {
   margin: 0.5em;
