@@ -20,9 +20,37 @@ article{
 // landing slide inner layout
 // stuff within container are centered
 
-.slide--landing > div{
+.slide--landing, .slide--introduction > div{
+	display: flex;
+	justify-content: center;
+}
+
+// default kiwi case - infinite components
+// fit all of them within same row, 
+// unless min-width is specified
+
+.slide--infinite-components{
 	display: flex;
 	justify-content: space-around;
+}
+
+// visual styling for widgets
+.widget{
+	margin: 0.5em;
+	border-color: #878787;
+	background-color: #eee;
+	border-radius: 1em;
+	h3{
+		border-bottom: dotted 0.1em black ;
+	}
+	img{
+		background-color: white;
+		width: calc(100% - 0.2em);
+		border: dotted 0.1em #eee;
+	}
+	h3, p{
+		padding: 0.5em;
+	}
 }
 
 

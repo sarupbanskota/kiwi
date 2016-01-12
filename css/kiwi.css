@@ -1,8 +1,26 @@
 article {
   width: 100%; }
 
-.slide--landing > div {
+.slide--landing, .slide--introduction > div {
+  display: flex;
+  justify-content: center; }
+
+.slide--infinite-components {
   display: flex;
   justify-content: space-around; }
+
+.widget {
+  margin: 0.5em;
+  border-color: #878787;
+  background-color: #eee;
+  border-radius: 1em; }
+  .widget h3 {
+    border-bottom: dotted 0.1em black; }
+  .widget img {
+    background-color: white;
+    width: calc(100% - 0.2em);
+    border: dotted 0.1em #eee; }
+  .widget h3, .widget p {
+    padding: 0.5em; }
 
 /*# sourceMappingURL=kiwi.css.map */
