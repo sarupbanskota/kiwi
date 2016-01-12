@@ -1,0 +1,22 @@
+{
+  "name": "kiwi",
+  "description": "Makes frontend less painful for the backend",
+  "main": "index.js",
+  "authors": [
+    "Sarup Banskota"
+  ],
+  "license": "MIT",
+  "homepage": "https://mesitis.github.io/kiwi",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.10"
+  }
+}
