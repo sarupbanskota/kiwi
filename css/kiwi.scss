@@ -13,6 +13,10 @@ $susy: (
 // 	width = (l - 2ng)/n (with gutter)
 // 	width = (l - ng)/n (single sided gutter)
 
+*{
+	box-sizing: border-box;
+}
+
 article{
 	width: span(12 of 12);
 }
@@ -53,5 +57,49 @@ article{
 	}
 }
 
+// two column case - menu section & main
 
+.slide--left-pane-example, .slide--right-pane-example{
+	.menu{
+		width: span(2 of 12);
+		float: left;
+	}
+	.main{
+		width: span(10 of 12);
+		float: left;
+	}
+}
 
+// visual styling for menu and main sections
+.menu, .main, .sidebar{
+	color: white;
+	padding: 2em;
+	height: 40em;	
+	border: dotted 0.05em #eee;
+}
+.menu{
+	background-color: tomato;
+}
+.main{
+	background-color: purple;
+}
+.sidebar{
+	background-color: turquoise;
+}
+
+// 3 col case - menu, main, aside
+
+.slide--3-col-example{
+	.menu{
+		width: span(2 of 12);
+		float: left;
+	}
+	.main{
+		width: span(8 of 12);
+		float: left;
+	}
+	.sidebar{
+		width: span(2 of 12);
+		float: left;
+	}
+}
