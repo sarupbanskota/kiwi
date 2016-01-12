@@ -1,0 +1,29 @@
+@import "../bower_components/susy/sass/susy";
+
+$susy: (
+  columns: 12,
+  gutter-position: inside,
+  math: fluid,
+  output: float,
+  flow: rtl,
+);
+
+// math: 
+// 	width = l/n (without gutter)
+// 	width = (l - 2ng)/n (with gutter)
+// 	width = (l - ng)/n (single sided gutter)
+
+article{
+	width: span(12 of 12);
+}
+
+// landing slide inner layout
+// stuff within container are centered
+
+.slide--landing > div{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
