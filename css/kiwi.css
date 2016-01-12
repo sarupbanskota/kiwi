@@ -12,6 +12,26 @@ article {
   display: flex;
   justify-content: space-around; }
 
+.slide--left-pane-example .menu, .slide--right-pane-example .menu {
+  width: 16.6666666667%;
+  float: left; }
+
+.slide--left-pane-example .main, .slide--right-pane-example .main {
+  width: 83.3333333333%;
+  float: left; }
+
+.slide--3-col-example .menu {
+  width: 16.6666666667%;
+  float: left; }
+
+.slide--3-col-example .main {
+  width: 66.6666666667%;
+  float: left; }
+
+.slide--3-col-example .sidebar {
+  width: 16.6666666667%;
+  float: left; }
+
 .widget {
   margin: 0.5em;
   border-color: #878787;
@@ -25,14 +45,6 @@ article {
     border: dotted 0.1em #eee; }
   .widget h3, .widget p {
     padding: 0.5em; }
-
-.slide--left-pane-example .menu, .slide--right-pane-example .menu {
-  width: 16.6666666667%;
-  float: left; }
-
-.slide--left-pane-example .main, .slide--right-pane-example .main {
-  width: 83.3333333333%;
-  float: left; }
 
 .menu, .main, .sidebar {
   color: white;
@@ -48,17 +60,5 @@ article {
 
 .sidebar {
   background-color: turquoise; }
-
-.slide--3-col-example .menu {
-  width: 16.6666666667%;
-  float: left; }
-
-.slide--3-col-example .main {
-  width: 66.6666666667%;
-  float: left; }
-
-.slide--3-col-example .sidebar {
-  width: 16.6666666667%;
-  float: left; }
 
 /*# sourceMappingURL=kiwi.css.map */
