@@ -2,25 +2,55 @@
 
 $susy: (
   columns: 12,
-  gutter: 1/4,
+  gutter: 1/8,
   gutter-position: inside,
   math: fluid,
   output: float,
-  flow: rtl,
+  flow: ltr,
+  global-box-sizing: border-box
 );
 
+*{
+	box-sizing: border-box;
+}
 
 article{
+	@include container;
 	@include span(8 of 12);
 	@include pre(2 of 12);
 }
 
-// landing slide inner layout
-// stuff within container are centered
+article.slide--left-pane-example{
+	.menu{
+		@include span(2 of 12);
+	}
+	.main{
+		@include span(10 of 12);
+		@include last;
+	}
+}
 
-.slide--landing > div, .slide--introduction > div{
-	display: flex;
-	justify-content: center;
+article.slide--right-pane-example{
+	.main{
+		@include span(10 of 12);
+	}
+	.menu{
+		@include span(2 of 12);
+		@include last;
+	}
+}
+
+article.slide--3-col-example{
+	.menu{
+		@include span(2 of 12);
+	}
+	.main{
+		@include span(8 of 12);
+	}
+	.sidebar{
+		@include span(2 of 12);
+		@include last;
+	}
 }
 
 // default kiwi case - infinite components
@@ -34,41 +64,38 @@ article{
 
 // two column case - menu section & main
 
-.slide--left-pane-example, .slide--right-pane-example{
-	.menu{
-		width: span(2 of 12);
-		float: left;
-	}
-	.main{
-		width: span(10 of 12);
-		float: left;
-	}
-}
+// .slide--left-pane-example, .slide--right-pane-example{
+// 	@include container;
+// 	.menu{
+// 		width: span(2 of 12);
+// 		float: left;
+// 	}
+// 	.main{
+// 		width: span(10 of 12);
+// 		float: left;
+// 	}
+// }
 
 // 3 col case - menu, main, aside
 
-.slide--3-col-example{
-	.menu{
-		width: span(2 of 12);
-		float: left;
-	}
-	.main{
-		width: span(8 of 12);
-		float: left;
-	}
-	.sidebar{
-		width: span(2 of 12);
-		float: left;
-	}
-}
+// .slide--3-col-example{
+// 	.menu{
+// 		width: span(2 of 12);
+// 		float: left;
+// 	}
+// 	.main{
+// 		width: span(8 of 12);
+// 		float: left;
+// 	}
+// 	.sidebar{
+// 		width: span(2 of 12);
+// 		float: left;
+// 	}
+// }
 
 // visual styling on landing page
-.slide--landing{
+.slide--landing, .slide--introduction{
 	height: 100vh;
-	img{
-		padding: 5em;
-		padding-bottom: 0em;
-	}
 }
 // visual styling for widgets
 .widget{
@@ -95,13 +122,14 @@ body{
 }
 article{
 	background-color: white;
+	border-bottom: dotted 0.2em #f7f7f7;
 }
+
 // visual styling for menu and main sections
 .menu, .main, .sidebar{
 	color: white;
-	padding: 2em;
 	height: 40em;	
-	border: dotted 0.05em #eee;
+	padding: 2em;
 }
 .menu{
 	background-color: tomato;
