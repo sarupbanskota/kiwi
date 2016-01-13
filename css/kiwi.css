@@ -1,15 +1,12 @@
-* {
-  box-sizing: border-box; }
-
 article {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 83.3333333333%;
+  width: 66.6666666667%;
   float: right;
   padding-right: 0.8333333333%;
   padding-left: 0.8333333333%;
-  margin-right: 8.3333333333%; }
+  margin-right: 16.6666666667%; }
 
 .slide--landing > div, .slide--introduction > div {
   display: flex;
@@ -42,11 +39,8 @@ article {
 .slide--landing {
   height: 100vh; }
   .slide--landing img {
-    padding: 5em; }
-  .slide--landing .highlight {
-    font-style: italic;
-    background-color: yellow;
-    font-weight: bold; }
+    padding: 5em;
+    padding-bottom: 0em; }
 
 .widget {
   margin: 0.5em;
@@ -61,6 +55,12 @@ article {
     border: dotted 0.1em #eee; }
   .widget h3, .widget p {
     padding: 0.5em; }
+
+body {
+  background-color: #F7F7F7; }
+
+article {
+  background-color: white; }
 
 .menu, .main, .sidebar {
   color: white;

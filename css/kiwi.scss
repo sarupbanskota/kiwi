@@ -2,19 +2,17 @@
 
 $susy: (
   columns: 12,
+  gutter: 1/4,
   gutter-position: inside,
   math: fluid,
   output: float,
   flow: rtl,
 );
 
-*{
-	box-sizing: border-box;
-}
 
 article{
-	@include span(10 of 12);
-	@include pre(1 of 12);
+	@include span(8 of 12);
+	@include pre(2 of 12);
 }
 
 // landing slide inner layout
@@ -69,11 +67,7 @@ article{
 	height: 100vh;
 	img{
 		padding: 5em;
-	}
-	.highlight{
-		font-style: italic;
-		background-color: yellow;
-		font-weight: bold;
+		padding-bottom: 0em;
 	}
 }
 // visual styling for widgets
@@ -95,6 +89,13 @@ article{
 	}
 }
 
+// visual styling for body and article
+body{
+	background-color: #F7F7F7;
+}
+article{
+	background-color: white;
+}
 // visual styling for menu and main sections
 .menu, .main, .sidebar{
 	color: white;
